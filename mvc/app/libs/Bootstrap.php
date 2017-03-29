@@ -1,5 +1,6 @@
 <?php
 
+
 class Bootstrap {
     
     private $url;
@@ -26,16 +27,16 @@ class Bootstrap {
     private function initController()
     {   
         if (empty($this->url[0])) {
-			require 'controllers/index.php';
+			include_once "../controllers/index.php";
 			$this->controller = new Index();
                         return false;
 		}
-        $file = 'controllers/' . $this->url[0] . '.php';
+        $file = '../controllers/' . $this->url[0] . '.php';
 		if (file_exists($file)) {
 			require $file;
                         $this->controller = new $this->url[0];
 		} else {
-			require 'controllers/error.php';
+			require '../controllers/error.php';
                         $this->controller = new cError(); 
 		}
     }
@@ -63,7 +64,7 @@ class Bootstrap {
     }
     
 	function error() {
-		require 'controllers/error.php';
+		require '../controllers/error.php';
 		$controller = new cError();
 		$controller->index();
 		return false;
