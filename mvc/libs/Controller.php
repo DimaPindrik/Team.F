@@ -9,7 +9,7 @@ class Controller{
     /**
      * @var null|view
      */
-    private $view = null;
+    protected $view = null;
 
     /**
      * @var null DB connestion
