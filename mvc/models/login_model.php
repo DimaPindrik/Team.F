@@ -24,4 +24,20 @@ class Login_Model
         }
         
     }
+    
+    public function register()
+    {
+        // check if user exists 
+            // to do...
+        //
+        $db = Database::getConnection();
+        $result = $db->prepare("INSERT INTO users (login, password)
+        VALUES (:login, :password)");
+        $result->execute(array(
+            ':login' => $_POST['login'],
+            ':password' => $_POST['password']
+        ));
+        
+        header('Location: ../login');
+    }
 }
