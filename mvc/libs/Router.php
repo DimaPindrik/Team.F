@@ -6,9 +6,6 @@ class Router {
     private $controller;
     
 	public function __construct() {
-                
-            $this->paths = include(ROOT.'/config/paths.php');
-            //print_r($this->paths);
             
             $this->getURI();
 		
@@ -32,6 +29,9 @@ class Router {
         $this->controllerName = array_shift($this->uri);
         $this->controllerAction = array_shift($this->uri);
         $this->controllerParams = $this->uri;
+        
+//        echo 'CTRname:'.$this->controllerName .'<br>'.'CTRaction:'.$this->controllerAction.'<br>';
+//        print_r($this->controllerParams);
         
         if (empty($this->controllerName)) {
 			require 'controllers/homepage.php';

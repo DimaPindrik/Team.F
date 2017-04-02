@@ -1,22 +1,18 @@
 <?php
 
-class Login_Model extends Model
+class Login_Model
 {
-    public function __construct(){
-        parent::__construct();
-    }
     
     public function run()
     {   
-        
-        $sql = $this->db->prepare("SELECT id FROM users WHERE login = :login AND password = :password"); //PDO commands, cleans query
-        $sql->execute(array(
+        $db = Database::getConnection();
+        $result = $db->prepare("SELECT id FROM users WHERE login = :login AND password = :password"); //PDO commands, cleans query
+        $result->execute(array(
             ':login' => $_POST['login'],
             ':password' => $_POST['password']
         ));
         
-        //$data = $sql->fetchAll();
-        $count =  $sql->rowCount();
+        $count =  $result->rowCount();
         if ($count > 0){
             //login
             Session::init();

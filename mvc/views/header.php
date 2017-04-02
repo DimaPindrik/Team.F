@@ -20,6 +20,7 @@
         <?php if (Session::get('loggedIn') == true): ?>
         <br>
         <a href="<?php echo URL; ?>dashboard/Logout">Logout</a>
+        <a href="<?php echo URL; ?>dashboard">Dashboard</a>
         <?php else: ?>
         <a href="<?php echo URL; ?>login">Login</a>
         <?php endif; ?>

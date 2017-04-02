@@ -1,15 +1,10 @@
 <?php
 
-class Help_Model extends Model{
-    
-    function __construct()
-    {
-        //echo 'Help model';
-    }
+class Help_Model
+{
+  
     function blah() {
         echo "BLAH";
     }
 }
 
-
-?>
