@@ -1,6 +1,6 @@
 <?php
 
-define('URL','http://localhost:85/newMVC/');
+define('URL','http://localhost:81/newMVC/');
 define('ROOT',dirname(__FILE__));
 
 //Components
