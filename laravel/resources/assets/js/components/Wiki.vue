@@ -1,0 +1,25 @@
+<template>
+    <div class="wiki-box">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Test Component</div>
+
+                    <div class="panel-body">
+                        {{ message }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        data() {
+          return {
+            message: 'Hey im the Wiki Widget'
+          }
+        }
+    }
+</script>
