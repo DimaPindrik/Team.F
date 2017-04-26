@@ -1,7 +1,7 @@
 [![Stories in Ready](https://badge.waffle.io/DimaPindrik/Team.F.png?label=ready&title=Ready)](https://waffle.io/DimaPindrik/Team.F)
 # Team.F
 Team F Project:
-Laravel  -  Installation:
+  Laravel  -  Installation:
 1. Clone the project with GIT
 2. Open console in "Team.F/laravel-backend"
 3. Run "composer install"
