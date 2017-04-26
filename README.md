@@ -4,9 +4,9 @@ Team F Project:
 
 Description: Widget dashboard application
 
-Frontend Platform: Javascript
+Frontend Platform: Javascript (Vue.js framework)
 
-Backend Platform: PHP
+Backend Platform: PHP (Laravel framework)
 
 Members:
 
