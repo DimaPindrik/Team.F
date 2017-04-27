@@ -2,6 +2,7 @@
 ## Team F Project
 
 <img style="max-width:50%; height: auto" src="http://www.freeiconspng.com/uploads/dashboard-icon-29.png">
+
 ## Laravel  -  Installation:
 - Clone the project with GIT
 - Open console in "Team.F/laravel-backend"
@@ -17,7 +18,7 @@
 - add the path to the Computer Environment Variables ( to check the path just run ">>where npm" in windows cmd)
 - cd to vue-frontend
 - Run "npm install"
-- Run "npm run dev" - to run the server (default port:8080)
+- Run "npm run dev" - to run the server (default port:8080).
 
 ## Description: Widget dashboard application
 
