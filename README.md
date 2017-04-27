@@ -1,7 +1,7 @@
 [![Stories in Ready](https://badge.waffle.io/DimaPindrik/Team.F.png?label=ready&title=Ready)](https://waffle.io/DimaPindrik/Team.F)
 ## Team.F
 Team F Project:
-<img style="max-width:50%; height: auto" src="http://www.freeiconspng.com/uploads/dashboard-icon-29.png">
+<img style="max-width:50%; height: 50%" src="http://www.freeiconspng.com/uploads/dashboard-icon-29.png">
   Laravel  -  Installation:
 1. Clone the project with GIT
 2. Open console in "Team.F/laravel-backend"
