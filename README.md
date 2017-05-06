@@ -28,9 +28,9 @@ Backend Platform: PHP (Laravel 5.4 framework)
 
 ## Members:
 
--  Dima Pindrik,
--  Timur Misharin,
--  Maoz Ben Yehuda,
--  Benny Talpa,
+-  Dima Pindrik
+-  Timur Misharin
+-  Maoz Ben Yehuda
+-  Benny Talpa
 -  Daniel Saka
   
