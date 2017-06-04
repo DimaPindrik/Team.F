@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class QuoteController extends Controller
 {
+    
     public function postQuote(Request $request)
     {
       $user = JWTAuth::parseToken()->toUser();

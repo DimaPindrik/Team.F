@@ -12,6 +12,8 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
+
 Route::post('/quote', [
   'uses' => 'QuoteController@postQuote',
   'middleware' => 'auth.jwt'
@@ -49,14 +51,23 @@ Route::get('/user/loggedin', [
   'middleware' => 'auth.jwt'
 ]);
 
-// Route::get('/user/loggedin', [
-//   'uses' => 'UserController@loggedIn'
-// ]);
-
-
 Route::get('/widgets', [
   'uses' => 'WidgetController@getWidgets'
 ]);
 
-Route::get('dashboard/{id}', 'WidgetController@show');
-// Route::get('dashboard/{widget}', 'WidgetController@show');
+// Gallery Routes
+
+Route::get('/widgets/Gallery/list', [
+  'uses' => 'GalleryController@viewGalleryList'
+]);
+Route::post('/widgets/Gallery/save', [
+  'uses' => 'GalleryController@saveGallery'
+]);
+Route::get('/widgets/Gallery/view/{id}', [
+  'uses' => 'GalleryController@viewGalleryPics'
+]);
+Route::post('/widgets/Gallery/upload', [
+  'uses' => 'GalleryController@doImageUpload'
+]);
+
+// end of Gallery routes
