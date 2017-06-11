@@ -34,6 +34,7 @@ body {
     background: cornflowerblue;
     padding: 20px;
 }
+
 h2 {
     color:crimson;
     text-decoration: overline;
@@ -41,4 +42,21 @@ h2 {
 }
 a{
     text-decoration: none;
+}
+input[type=text],[type=password] {
+    border: 2px solid grey;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background-color:wheat;
+    border: none;
+    color: black;
+    padding: 8px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+td{    
+    display: block;
+    mergin: 0 0 3px;
 }

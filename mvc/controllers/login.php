@@ -13,6 +13,11 @@ Class Login extends Controller{
     
     function run()
     {
-        $this->model->run();
+        if (isset($_POST['submit'])){
+            $this->model->run();
+        }
+        if (isset($_POST['register'])){
+            $this->model->register();
+        }
     }
 }
